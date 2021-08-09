@@ -1,8 +1,6 @@
 # Debug with Ray to fix problems faster
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-ray.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-ray)
-![Tests](https://github.com/spatie/laravel-ray/workflows/Tests/badge.svg)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-ray.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-ray)
+[![Latest Stable Version](http://poser.pugx.org/xndbogdan/laravel-ray-legacy/v)](https://packagist.org/packages/xndbogdan/laravel-ray-legacy) [![Total Downloads](http://poser.pugx.org/xndbogdan/laravel-ray-legacy/downloads)](https://packagist.org/packages/xndbogdan/laravel-ray-legacy) [![Latest Unstable Version](http://poser.pugx.org/xndbogdan/laravel-ray-legacy/v/unstable)](https://packagist.org/packages/xndbogdan/laravel-ray-legacy) [![License](http://poser.pugx.org/xndbogdan/laravel-ray-legacy/license)](https://packagist.org/packages/xndbogdan/laravel-ray-legacy)
 
 This package can be installed in any PHP application to send messages to [the Ray app](https://myray.app). 
 It was modified to work with older laravel installations. 
