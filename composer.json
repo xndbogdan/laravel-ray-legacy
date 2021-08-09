@@ -47,12 +47,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\LaravelRay\\": "src"
+            "xndbogdan\\LaravelRay\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\LaravelRay\\Tests\\": "tests"
+            "xndbogdan\\LaravelRay\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -67,7 +67,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\LaravelRay\\RayServiceProvider"
+                "xndbogdan\\LaravelRay\\RayServiceProvider"
             ]
         }
     },
