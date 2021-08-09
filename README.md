@@ -1,5 +1,5 @@
 # Debug with Ray to fix problems faster
-
+ 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-ray.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-ray)
 ![Tests](https://github.com/spatie/laravel-ray/workflows/Tests/badge.svg)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-ray.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-ray)
