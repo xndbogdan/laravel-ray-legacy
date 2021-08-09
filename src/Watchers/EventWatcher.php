@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelRay\Watchers;
+namespace xndbogdan\LaravelRayLegacy\Watchers;
 
 use Illuminate\Support\Facades\Event;
-use Spatie\LaravelRay\Payloads\EventPayload;
-use Spatie\LaravelRay\Ray;
+use xndbogdan\LaravelRayLegacy\Payloads\EventPayload;
+use xndbogdan\LaravelRayLegacy\Ray;
 
 class EventWatcher extends Watcher
 {

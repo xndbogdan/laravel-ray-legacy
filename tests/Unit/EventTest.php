@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelRay\Tests\Unit;
+namespace xndbogdan\LaravelRayLegacy\Tests\Unit;
 
 use Illuminate\Support\Arr;
-use Spatie\LaravelRay\Ray;
-use Spatie\LaravelRay\Tests\TestCase;
-use Spatie\LaravelRay\Tests\TestClasses\TestEvent;
+use xndbogdan\LaravelRayLegacy\Ray;
+use xndbogdan\LaravelRayLegacy\Tests\TestCase;
+use xndbogdan\LaravelRayLegacy\Tests\TestClasses\TestEvent;
 
 class EventTest extends TestCase
 {

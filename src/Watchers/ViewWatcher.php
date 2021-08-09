@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelRay\Watchers;
+namespace xndbogdan\LaravelRayLegacy\Watchers;
 
 use Illuminate\Support\Facades\Event;
-use Spatie\LaravelRay\Ray;
+use xndbogdan\LaravelRayLegacy\Ray;
 use Spatie\Ray\Settings\Settings;
 
 class ViewWatcher extends Watcher

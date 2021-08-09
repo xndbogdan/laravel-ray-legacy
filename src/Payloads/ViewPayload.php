@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRay\Payloads;
+namespace xndbogdan\LaravelRayLegacy\Payloads;
 
 use Illuminate\Support\Str;
 use Illuminate\View\View;

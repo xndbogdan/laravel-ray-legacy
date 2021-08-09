@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRay\DumpRecorder;
+namespace xndbogdan\LaravelRayLegacy\DumpRecorder;
 
 class MultiDumpHandler
 {

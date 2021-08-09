@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelRay\Tests\Unit;
+namespace xndbogdan\LaravelRayLegacy\Tests\Unit;
 
 use Exception;
 use Illuminate\Log\Events\MessageLogged;
-use Spatie\LaravelRay\Tests\TestCase;
+use xndbogdan\LaravelRayLegacy\Tests\TestCase;
 
 class ExceptionTest extends TestCase
 {

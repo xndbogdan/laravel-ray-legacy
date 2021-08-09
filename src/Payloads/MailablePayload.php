@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRay\Payloads;
+namespace xndbogdan\LaravelRayLegacy\Payloads;
 
 use Illuminate\Mail\Mailable;
 use Spatie\Ray\Payloads\Payload;

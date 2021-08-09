@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelRay\Watchers;
+namespace xndbogdan\LaravelRayLegacy\Watchers;
 
 use Illuminate\Log\Events\MessageLogged;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Str;
-use Spatie\LaravelRay\Ray;
+use xndbogdan\LaravelRayLegacy\Ray;
 
 class LoggedMailWatcher extends Watcher
 {

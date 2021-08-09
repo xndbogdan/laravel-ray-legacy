@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRay;
+namespace xndbogdan\LaravelRayLegacy;
 
 use Illuminate\Cache\CacheManager;
 use Illuminate\Contracts\Container\BindingResolutionException;
@@ -14,10 +14,10 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Stringable;
 use Spatie\Backtrace\Backtrace;
 use Spatie\Backtrace\Frame;
-use Spatie\LaravelRay\DumpRecorder\DumpRecorder;
-use Spatie\LaravelRay\Watchers\CacheWatcher;
-use Spatie\LaravelRay\Watchers\QueryWatcher;
-use Spatie\LaravelRay\Watchers\ViewWatcher;
+use xndbogdan\LaravelRayLegacy\DumpRecorder\DumpRecorder;
+use xndbogdan\LaravelRayLegacy\Watchers\CacheWatcher;
+use xndbogdan\LaravelRayLegacy\Watchers\QueryWatcher;
+use xndbogdan\LaravelRayLegacy\Watchers\ViewWatcher;
 use Spatie\Ray\Origin\Origin;
 use Spatie\Ray\Ray;
 
@@ -76,7 +76,7 @@ class OriginFactory
             return $this->findFrameForStringableMacro($frames, $indexOfRay);
         }
 
-        if ($rayFrame->class === Collection::class && Str::startsWith($rayFrame->method, 'Spatie\LaravelRay')) {
+        if ($rayFrame->class === Collection::class && Str::startsWith($rayFrame->method, 'xndbogdan\LaravelRayLegacy')) {
             return $this->findFrameForCollectionMacro($frames, $indexOfRay);
         }
 
