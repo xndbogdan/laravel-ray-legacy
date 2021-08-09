@@ -38,7 +38,7 @@
     "require-dev": {
         "facade/ignition": "*",
         "guzzlehttp/guzzle": "*",
-        "laravel/framework": "*",
+        "laravel/framework": "^5.0|^6.0|^7.0|^8.0|^9.0",
         "orchestra/testbench-core": "*",
         "phpstan/phpstan": "*",
         "phpunit/phpunit": "*",
