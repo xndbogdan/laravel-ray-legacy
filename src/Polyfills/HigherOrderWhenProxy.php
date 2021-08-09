@@ -1,6 +1,6 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Polyfills;
+namespace Spatie\LaravelRayLegacy\Polyfills;
 
 class HigherOrderWhenProxy
 {

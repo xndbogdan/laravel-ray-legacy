@@ -1,14 +1,14 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Watchers;
+namespace Spatie\LaravelRayLegacy\Watchers;
 
 use Illuminate\Queue\Events\JobFailed;
 use Illuminate\Queue\Events\JobProcessed;
 use Illuminate\Queue\Events\JobProcessing;
 use Illuminate\Queue\Events\JobQueued;
 use Illuminate\Support\Facades\Event;
-use xndbogdan\LaravelRayLegacy\Payloads\JobEventPayload;
-use xndbogdan\LaravelRayLegacy\Ray;
+use Spatie\LaravelRayLegacy\Payloads\JobEventPayload;
+use Spatie\LaravelRayLegacy\Ray;
 use Spatie\Ray\Settings\Settings;
 
 class JobWatcher extends Watcher

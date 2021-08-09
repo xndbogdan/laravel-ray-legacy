@@ -1,10 +1,10 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Tests\Unit;
+namespace Spatie\LaravelRayLegacy\Tests\Unit;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Stringable;
-use xndbogdan\LaravelRayLegacy\Tests\TestCase;
+use Spatie\LaravelRayLegacy\Tests\TestCase;
 
 class StringableTest extends TestCase
 {

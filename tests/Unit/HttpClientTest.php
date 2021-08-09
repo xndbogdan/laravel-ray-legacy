@@ -1,12 +1,12 @@
 <?php
 
 
-namespace xndbogdan\LaravelRayLegacy\Tests\Unit;
+namespace Spatie\LaravelRayLegacy\Tests\Unit;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Http;
-use xndbogdan\LaravelRayLegacy\Tests\TestCase;
-use xndbogdan\LaravelRayLegacy\Watchers\HttpClientWatcher;
+use Spatie\LaravelRayLegacy\Tests\TestCase;
+use Spatie\LaravelRayLegacy\Watchers\HttpClientWatcher;
 
 class HttpClientTest extends TestCase
 {

@@ -1,11 +1,11 @@
 <?php
 
 
-namespace xndbogdan\LaravelRayLegacy\Tests\Unit;
+namespace Spatie\LaravelRayLegacy\Tests\Unit;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
-use xndbogdan\LaravelRayLegacy\Tests\TestCase;
+use Spatie\LaravelRayLegacy\Tests\TestCase;
 
 class RequestTest extends TestCase
 {

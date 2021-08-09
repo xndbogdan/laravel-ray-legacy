@@ -1,13 +1,13 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Watchers;
+namespace Spatie\LaravelRayLegacy\Watchers;
 
 use Exception;
 use Facade\FlareClient\Flare;
 use Facade\FlareClient\Truncation\ReportTrimmer;
 use Illuminate\Log\Events\MessageLogged;
 use Illuminate\Support\Facades\Event;
-use xndbogdan\LaravelRayLegacy\Ray;
+use Spatie\LaravelRayLegacy\Ray;
 use Spatie\Ray\Settings\Settings;
 use Throwable;
 

@@ -1,14 +1,14 @@
 <?php
 
 
-namespace xndbogdan\LaravelRayLegacy\Watchers;
+namespace Spatie\LaravelRayLegacy\Watchers;
 
 use Illuminate\Http\Client\Events\RequestSending;
 use Illuminate\Http\Client\Events\ResponseReceived;
 use Illuminate\Http\Client\Request;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Event;
-use xndbogdan\LaravelRayLegacy\Ray;
+use Spatie\LaravelRayLegacy\Ray;
 use Spatie\Ray\Payloads\TablePayload;
 use Spatie\Ray\Settings\Settings;
 

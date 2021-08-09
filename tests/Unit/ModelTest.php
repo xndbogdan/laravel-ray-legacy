@@ -1,9 +1,9 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Tests\Unit;
+namespace Spatie\LaravelRayLegacy\Tests\Unit;
 
-use xndbogdan\LaravelRayLegacy\Tests\TestCase;
-use xndbogdan\LaravelRayLegacy\Tests\TestClasses\User;
+use Spatie\LaravelRayLegacy\Tests\TestCase;
+use Spatie\LaravelRayLegacy\Tests\TestClasses\User;
 
 class ModelTest extends TestCase
 {

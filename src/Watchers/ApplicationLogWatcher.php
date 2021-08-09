@@ -1,17 +1,17 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Watchers;
+namespace Spatie\LaravelRayLegacy\Watchers;
 
 use Illuminate\Log\Events\MessageLogged;
 use Illuminate\Support\Facades\Event;
-use xndbogdan\LaravelRayLegacy\Ray;
+use Spatie\LaravelRayLegacy\Ray;
 use Spatie\Ray\Payloads\ApplicationLogPayload;
 
 class ApplicationLogWatcher extends Watcher
 {
     public function register(): void
     {
-        /** @var \xndbogdan\LaravelRayLegacy\Ray $ray */
+        /** @var \Spatie\LaravelRayLegacy\Ray $ray */
         $ray = app(Ray::class);
 
         $this->enabled = $ray->settings->send_log_calls_to_ray;

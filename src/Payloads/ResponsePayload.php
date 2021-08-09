@@ -1,6 +1,6 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Payloads;
+namespace Spatie\LaravelRayLegacy\Payloads;
 
 use Illuminate\Testing\TestResponse;
 use Spatie\Ray\ArgumentConverter;

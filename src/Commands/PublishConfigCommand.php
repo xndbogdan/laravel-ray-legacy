@@ -1,6 +1,6 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Commands;
+namespace Spatie\LaravelRayLegacy\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

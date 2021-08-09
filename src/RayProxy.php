@@ -1,6 +1,6 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy;
+namespace Spatie\LaravelRayLegacy;
 
 use Spatie\Ray\Ray;
 

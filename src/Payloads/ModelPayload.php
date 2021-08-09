@@ -1,6 +1,6 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Payloads;
+namespace Spatie\LaravelRayLegacy\Payloads;
 
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Ray\ArgumentConverter;

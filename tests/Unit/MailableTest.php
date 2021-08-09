@@ -1,10 +1,10 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Tests\Unit;
+namespace Spatie\LaravelRayLegacy\Tests\Unit;
 
 use Illuminate\Support\Facades\Mail;
-use xndbogdan\LaravelRayLegacy\Tests\TestCase;
-use xndbogdan\LaravelRayLegacy\Tests\TestClasses\TestMailable;
+use Spatie\LaravelRayLegacy\Tests\TestCase;
+use Spatie\LaravelRayLegacy\Tests\TestClasses\TestMailable;
 
 class MailableTest extends TestCase
 {

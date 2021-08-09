@@ -1,6 +1,6 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Payloads;
+namespace Spatie\LaravelRayLegacy\Payloads;
 
 use Spatie\Ray\Payloads\Payload;
 use ZBateson\MailMimeParser\Header\AddressHeader;

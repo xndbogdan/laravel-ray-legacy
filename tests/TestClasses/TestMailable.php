@@ -1,6 +1,6 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Tests\TestClasses;
+namespace Spatie\LaravelRayLegacy\Tests\TestClasses;
 
 use Illuminate\Mail\Mailable;
 

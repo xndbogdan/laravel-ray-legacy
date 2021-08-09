@@ -1,11 +1,11 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Tests\Unit;
+namespace Spatie\LaravelRayLegacy\Tests\Unit;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
-use xndbogdan\LaravelRayLegacy\Tests\TestCase;
-use xndbogdan\LaravelRayLegacy\Tests\TestClasses\User;
+use Spatie\LaravelRayLegacy\Tests\TestCase;
+use Spatie\LaravelRayLegacy\Tests\TestClasses\User;
 
 class QueryTest extends TestCase
 {

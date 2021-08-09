@@ -1,6 +1,6 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy;
+namespace Spatie\LaravelRayLegacy;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder;
@@ -9,22 +9,22 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use xndbogdan\LaravelRayLegacy\Commands\PublishConfigCommand;
-use xndbogdan\LaravelRayLegacy\Payloads\MailablePayload;
-use xndbogdan\LaravelRayLegacy\Payloads\ModelPayload;
-use xndbogdan\LaravelRayLegacy\Payloads\QueryPayload;
-use xndbogdan\LaravelRayLegacy\Polyfills\Stringable;
-use xndbogdan\LaravelRayLegacy\Watchers\ApplicationLogWatcher;
-use xndbogdan\LaravelRayLegacy\Watchers\CacheWatcher;
-use xndbogdan\LaravelRayLegacy\Watchers\DumpWatcher;
-use xndbogdan\LaravelRayLegacy\Watchers\EventWatcher;
-use xndbogdan\LaravelRayLegacy\Watchers\ExceptionWatcher;
-use xndbogdan\LaravelRayLegacy\Watchers\HttpClientWatcher;
-use xndbogdan\LaravelRayLegacy\Watchers\JobWatcher;
-use xndbogdan\LaravelRayLegacy\Watchers\LoggedMailWatcher;
-use xndbogdan\LaravelRayLegacy\Watchers\QueryWatcher;
-use xndbogdan\LaravelRayLegacy\Watchers\RequestWatcher;
-use xndbogdan\LaravelRayLegacy\Watchers\ViewWatcher;
+use Spatie\LaravelRayLegacy\Commands\PublishConfigCommand;
+use Spatie\LaravelRayLegacy\Payloads\MailablePayload;
+use Spatie\LaravelRayLegacy\Payloads\ModelPayload;
+use Spatie\LaravelRayLegacy\Payloads\QueryPayload;
+use Spatie\LaravelRayLegacy\Polyfills\Stringable;
+use Spatie\LaravelRayLegacy\Watchers\ApplicationLogWatcher;
+use Spatie\LaravelRayLegacy\Watchers\CacheWatcher;
+use Spatie\LaravelRayLegacy\Watchers\DumpWatcher;
+use Spatie\LaravelRayLegacy\Watchers\EventWatcher;
+use Spatie\LaravelRayLegacy\Watchers\ExceptionWatcher;
+use Spatie\LaravelRayLegacy\Watchers\HttpClientWatcher;
+use Spatie\LaravelRayLegacy\Watchers\JobWatcher;
+use Spatie\LaravelRayLegacy\Watchers\LoggedMailWatcher;
+use Spatie\LaravelRayLegacy\Watchers\QueryWatcher;
+use Spatie\LaravelRayLegacy\Watchers\RequestWatcher;
+use Spatie\LaravelRayLegacy\Watchers\ViewWatcher;
 use Spatie\Ray\Client;
 use Spatie\Ray\PayloadFactory;
 use Spatie\Ray\Payloads\Payload;
@@ -149,7 +149,7 @@ class RayServiceProvider extends ServiceProvider
 
         collect($watchers)
             ->each(function (string $watcherClass) {
-                /** @var \xndbogdan\LaravelRayLegacy\Watchers\Watcher $watcher */
+                /** @var \Spatie\LaravelRayLegacy\Watchers\Watcher $watcher */
                 $watcher = app($watcherClass);
 
                 $watcher->register();

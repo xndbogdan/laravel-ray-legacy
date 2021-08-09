@@ -1,6 +1,6 @@
 <?php
 
-namespace xndbogdan\LaravelRayLegacy\Payloads;
+namespace Spatie\LaravelRayLegacy\Payloads;
 
 use League\CommonMark\GithubFlavoredMarkdownConverter;
 use Spatie\Ray\Payloads\Payload;
