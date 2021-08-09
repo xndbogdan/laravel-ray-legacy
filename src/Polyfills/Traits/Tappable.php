@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Polyfills\Traits;
+namespace Spatie\LaravelRay\Polyfills\Traits;
 
 trait Tappable
 {

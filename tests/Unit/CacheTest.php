@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Tests\Unit;
+namespace Spatie\LaravelRay\Tests\Unit;
 
 use Illuminate\Support\Facades\Cache;
-use Spatie\LaravelRayLegacy\Tests\TestCase;
+use Spatie\LaravelRay\Tests\TestCase;
 
 class CacheTest extends TestCase
 {

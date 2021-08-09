@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Spatie\LaravelRayLegacy\Tests\Concerns;
+namespace Spatie\LaravelRay\Tests\Concerns;
 
 use Spatie\Snapshots\MatchesSnapshots;
 

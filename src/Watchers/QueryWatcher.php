@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Watchers;
+namespace Spatie\LaravelRay\Watchers;
 
 use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
-use Spatie\LaravelRayLegacy\Payloads\ExecutedQueryPayload;
-use Spatie\LaravelRayLegacy\Ray;
+use Spatie\LaravelRay\Payloads\ExecutedQueryPayload;
+use Spatie\LaravelRay\Ray;
 use Spatie\Ray\Settings\Settings;
 
 class QueryWatcher extends Watcher

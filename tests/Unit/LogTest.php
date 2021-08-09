@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Tests\Unit;
+namespace Spatie\LaravelRay\Tests\Unit;
 
 use Illuminate\Support\Facades\Log;
-use Spatie\LaravelRayLegacy\Tests\TestCase;
+use Spatie\LaravelRay\Tests\TestCase;
 use Spatie\Ray\Settings\Settings;
 
 class LogTest extends TestCase

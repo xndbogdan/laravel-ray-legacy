@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Tests\Unit;
+namespace Spatie\LaravelRay\Tests\Unit;
 
-use Spatie\LaravelRayLegacy\Tests\TestCase;
+use Spatie\LaravelRay\Tests\TestCase;
 
 class DumpTest extends TestCase
 {

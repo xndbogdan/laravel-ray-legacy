@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Watchers;
+namespace Spatie\LaravelRay\Watchers;
 
 use Illuminate\Cache\Events\CacheHit;
 use Illuminate\Cache\Events\CacheMissed;
 use Illuminate\Cache\Events\KeyForgotten;
 use Illuminate\Cache\Events\KeyWritten;
-use Spatie\LaravelRayLegacy\Payloads\CachePayload;
-use Spatie\LaravelRayLegacy\Ray;
+use Spatie\LaravelRay\Payloads\CachePayload;
+use Spatie\LaravelRay\Ray;
 use Spatie\Ray\Settings\Settings;
 
 class CacheWatcher extends Watcher

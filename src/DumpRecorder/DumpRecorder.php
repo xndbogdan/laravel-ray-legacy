@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\DumpRecorder;
+namespace Spatie\LaravelRay\DumpRecorder;
 
 use Closure;
 use Illuminate\Contracts\Container\Container;
-use Spatie\LaravelRayLegacy\Ray;
+use Spatie\LaravelRay\Ray;
 use Symfony\Component\VarDumper\Cloner\VarCloner;
 use Symfony\Component\VarDumper\Dumper\CliDumper;
 use Symfony\Component\VarDumper\Dumper\HtmlDumper as BaseHtmlDumper;

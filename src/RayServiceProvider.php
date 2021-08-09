@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy;
+namespace Spatie\LaravelRay;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder;
@@ -9,22 +9,22 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Spatie\LaravelRayLegacy\Commands\PublishConfigCommand;
-use Spatie\LaravelRayLegacy\Payloads\MailablePayload;
-use Spatie\LaravelRayLegacy\Payloads\ModelPayload;
-use Spatie\LaravelRayLegacy\Payloads\QueryPayload;
-use Spatie\LaravelRayLegacy\Polyfills\Stringable;
-use Spatie\LaravelRayLegacy\Watchers\ApplicationLogWatcher;
-use Spatie\LaravelRayLegacy\Watchers\CacheWatcher;
-use Spatie\LaravelRayLegacy\Watchers\DumpWatcher;
-use Spatie\LaravelRayLegacy\Watchers\EventWatcher;
-use Spatie\LaravelRayLegacy\Watchers\ExceptionWatcher;
-use Spatie\LaravelRayLegacy\Watchers\HttpClientWatcher;
-use Spatie\LaravelRayLegacy\Watchers\JobWatcher;
-use Spatie\LaravelRayLegacy\Watchers\LoggedMailWatcher;
-use Spatie\LaravelRayLegacy\Watchers\QueryWatcher;
-use Spatie\LaravelRayLegacy\Watchers\RequestWatcher;
-use Spatie\LaravelRayLegacy\Watchers\ViewWatcher;
+use Spatie\LaravelRay\Commands\PublishConfigCommand;
+use Spatie\LaravelRay\Payloads\MailablePayload;
+use Spatie\LaravelRay\Payloads\ModelPayload;
+use Spatie\LaravelRay\Payloads\QueryPayload;
+use Spatie\LaravelRay\Polyfills\Stringable;
+use Spatie\LaravelRay\Watchers\ApplicationLogWatcher;
+use Spatie\LaravelRay\Watchers\CacheWatcher;
+use Spatie\LaravelRay\Watchers\DumpWatcher;
+use Spatie\LaravelRay\Watchers\EventWatcher;
+use Spatie\LaravelRay\Watchers\ExceptionWatcher;
+use Spatie\LaravelRay\Watchers\HttpClientWatcher;
+use Spatie\LaravelRay\Watchers\JobWatcher;
+use Spatie\LaravelRay\Watchers\LoggedMailWatcher;
+use Spatie\LaravelRay\Watchers\QueryWatcher;
+use Spatie\LaravelRay\Watchers\RequestWatcher;
+use Spatie\LaravelRay\Watchers\ViewWatcher;
 use Spatie\Ray\Client;
 use Spatie\Ray\PayloadFactory;
 use Spatie\Ray\Payloads\Payload;
@@ -149,7 +149,7 @@ class RayServiceProvider extends ServiceProvider
 
         collect($watchers)
             ->each(function (string $watcherClass) {
-                /** @var \Spatie\LaravelRayLegacy\Watchers\Watcher $watcher */
+                /** @var \Spatie\LaravelRay\Watchers\Watcher $watcher */
                 $watcher = app($watcherClass);
 
                 $watcher->register();

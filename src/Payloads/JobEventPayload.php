@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Payloads;
+namespace Spatie\LaravelRay\Payloads;
 
 use Spatie\Ray\ArgumentConverter;
 use Spatie\Ray\Payloads\Payload;

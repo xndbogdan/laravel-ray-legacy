@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Watchers;
+namespace Spatie\LaravelRay\Watchers;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Http\Events\RequestHandled;
@@ -9,7 +9,7 @@ use Illuminate\Http\Response as IlluminateResponse;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
-use Spatie\LaravelRayLegacy\Ray;
+use Spatie\LaravelRay\Ray;
 use Spatie\Ray\Payloads\TablePayload;
 use Spatie\Ray\Settings\Settings;
 use Symfony\Component\HttpFoundation\RedirectResponse;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Tests\Unit;
+namespace Spatie\LaravelRay\Tests\Unit;
 
 use Illuminate\Support\Arr;
-use Spatie\LaravelRayLegacy\Tests\TestCase;
-use Spatie\LaravelRayLegacy\Tests\TestClasses\TestJob;
+use Spatie\LaravelRay\Tests\TestCase;
+use Spatie\LaravelRay\Tests\TestClasses\TestJob;
 
 class JobTest extends TestCase
 {

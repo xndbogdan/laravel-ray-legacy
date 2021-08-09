@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Watchers;
+namespace Spatie\LaravelRay\Watchers;
 
-use Spatie\LaravelRayLegacy\DumpRecorder\DumpRecorder;
+use Spatie\LaravelRay\DumpRecorder\DumpRecorder;
 use Spatie\Ray\Settings\Settings;
 
 class DumpWatcher extends Watcher

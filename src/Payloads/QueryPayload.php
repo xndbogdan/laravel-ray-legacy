@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Payloads;
+namespace Spatie\LaravelRay\Payloads;
 
 use Illuminate\Database\Query\Builder;
 use Spatie\Ray\Payloads\Payload;

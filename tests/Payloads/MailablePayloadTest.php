@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Tests\Payloads;
+namespace Spatie\LaravelRay\Tests\Payloads;
 
-use Spatie\LaravelRayLegacy\Payloads\MailablePayload;
-use Spatie\LaravelRayLegacy\Tests\TestCase;
-use Spatie\LaravelRayLegacy\Tests\TestClasses\TestMailable;
+use Spatie\LaravelRay\Payloads\MailablePayload;
+use Spatie\LaravelRay\Tests\TestCase;
+use Spatie\LaravelRay\Tests\TestClasses\TestMailable;
 
 class MailablePayloadTest extends TestCase
 {

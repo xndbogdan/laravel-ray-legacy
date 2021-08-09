@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Polyfills;
+namespace Spatie\LaravelRay\Polyfills;
 
 use Closure;
 use Illuminate\Support\Traits\Macroable;
 use JsonSerializable;
-use Spatie\LaravelRayLegacy\Polyfills\Traits\Conditionable;
-use Spatie\LaravelRayLegacy\Polyfills\Traits\Tappable;
+use Spatie\LaravelRay\Polyfills\Traits\Conditionable;
+use Spatie\LaravelRay\Polyfills\Traits\Tappable;
 use Symfony\Component\VarDumper\VarDumper;
 
 class Stringable implements JsonSerializable

@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Tests\Payloads;
+namespace Spatie\LaravelRay\Tests\Payloads;
 
-use Spatie\LaravelRayLegacy\Payloads\LoggedMailPayload;
-use Spatie\LaravelRayLegacy\Tests\TestCase;
+use Spatie\LaravelRay\Payloads\LoggedMailPayload;
+use Spatie\LaravelRay\Tests\TestCase;
 
 class LoggedMailPayloadTest extends TestCase
 {

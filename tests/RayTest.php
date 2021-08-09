@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Tests;
+namespace Spatie\LaravelRay\Tests;
 
 use Illuminate\Support\Arr;
 use Log;
-use Spatie\LaravelRayLegacy\Tests\Concerns\MatchesOsSafeSnapshots;
-use Spatie\LaravelRayLegacy\Tests\TestClasses\TestMailable;
-use Spatie\LaravelRayLegacy\Tests\TestClasses\User;
+use Spatie\LaravelRay\Tests\Concerns\MatchesOsSafeSnapshots;
+use Spatie\LaravelRay\Tests\TestClasses\TestMailable;
+use Spatie\LaravelRay\Tests\TestClasses\User;
 use Spatie\Ray\Settings\Settings;
 
 class RayTest extends TestCase

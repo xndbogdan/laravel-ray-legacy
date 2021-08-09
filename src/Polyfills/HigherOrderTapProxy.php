@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Polyfills;
+namespace Spatie\LaravelRay\Polyfills;
 
 class HigherOrderTapProxy
 {

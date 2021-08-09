@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy;
+namespace Spatie\LaravelRay;
 
 use Closure;
 use Composer\InstalledVersions;
@@ -15,23 +15,23 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Testing\Fakes\MailFake;
 use Illuminate\Testing\TestResponse;
 use Illuminate\View\View;
-use Spatie\LaravelRayLegacy\Payloads\EnvironmentPayload;
-use Spatie\LaravelRayLegacy\Payloads\ExecutedQueryPayload;
-use Spatie\LaravelRayLegacy\Payloads\LoggedMailPayload;
-use Spatie\LaravelRayLegacy\Payloads\MailablePayload;
-use Spatie\LaravelRayLegacy\Payloads\MarkdownPayload;
-use Spatie\LaravelRayLegacy\Payloads\ModelPayload;
-use Spatie\LaravelRayLegacy\Payloads\ResponsePayload;
-use Spatie\LaravelRayLegacy\Payloads\ViewPayload;
-use Spatie\LaravelRayLegacy\Watchers\CacheWatcher;
-use Spatie\LaravelRayLegacy\Watchers\EventWatcher;
-use Spatie\LaravelRayLegacy\Watchers\ExceptionWatcher;
-use Spatie\LaravelRayLegacy\Watchers\HttpClientWatcher;
-use Spatie\LaravelRayLegacy\Watchers\JobWatcher;
-use Spatie\LaravelRayLegacy\Watchers\QueryWatcher;
-use Spatie\LaravelRayLegacy\Watchers\RequestWatcher;
-use Spatie\LaravelRayLegacy\Watchers\ViewWatcher;
-use Spatie\LaravelRayLegacy\Watchers\Watcher;
+use Spatie\LaravelRay\Payloads\EnvironmentPayload;
+use Spatie\LaravelRay\Payloads\ExecutedQueryPayload;
+use Spatie\LaravelRay\Payloads\LoggedMailPayload;
+use Spatie\LaravelRay\Payloads\MailablePayload;
+use Spatie\LaravelRay\Payloads\MarkdownPayload;
+use Spatie\LaravelRay\Payloads\ModelPayload;
+use Spatie\LaravelRay\Payloads\ResponsePayload;
+use Spatie\LaravelRay\Payloads\ViewPayload;
+use Spatie\LaravelRay\Watchers\CacheWatcher;
+use Spatie\LaravelRay\Watchers\EventWatcher;
+use Spatie\LaravelRay\Watchers\ExceptionWatcher;
+use Spatie\LaravelRay\Watchers\HttpClientWatcher;
+use Spatie\LaravelRay\Watchers\JobWatcher;
+use Spatie\LaravelRay\Watchers\QueryWatcher;
+use Spatie\LaravelRay\Watchers\RequestWatcher;
+use Spatie\LaravelRay\Watchers\ViewWatcher;
+use Spatie\LaravelRay\Watchers\Watcher;
 use Spatie\Ray\Client;
 use Spatie\Ray\Payloads\ExceptionPayload;
 use Spatie\Ray\Ray as BaseRay;
@@ -85,7 +85,7 @@ class Ray extends BaseRay
     /**
      * @param Model|iterable ...$model
      *
-     * @return \Spatie\LaravelRayLegacy\Ray
+     * @return \Spatie\LaravelRay\Ray
      */
     public function model(...$model): self
     {
@@ -125,7 +125,7 @@ class Ray extends BaseRay
     /**
      * @param Model|iterable $models
      *
-     * @return \Spatie\LaravelRayLegacy\Ray
+     * @return \Spatie\LaravelRay\Ray
      */
     public function models($models): self
     {
@@ -145,7 +145,7 @@ class Ray extends BaseRay
      * @param string[]|array|null $onlyShowNames
      * @param string|null $filename
      *
-     * @return \Spatie\LaravelRayLegacy\Ray
+     * @return \Spatie\LaravelRay\Ray
      */
     public function env(?array $onlyShowNames = null, ?string $filename = null): self
     {
@@ -161,7 +161,7 @@ class Ray extends BaseRay
     /**
      * @param null $callable
      *
-     * @return \Spatie\LaravelRayLegacy\Ray
+     * @return \Spatie\LaravelRay\Ray
      */
     public function showEvents($callable = null)
     {
@@ -177,7 +177,7 @@ class Ray extends BaseRay
 
     public function stopShowingEvents(): self
     {
-        /** @var \Spatie\LaravelRayLegacy\Watchers\EventWatcher $eventWatcher */
+        /** @var \Spatie\LaravelRay\Watchers\EventWatcher $eventWatcher */
         $eventWatcher = app(EventWatcher::class);
 
         $eventWatcher->disable();
@@ -187,7 +187,7 @@ class Ray extends BaseRay
 
     public function showExceptions(): self
     {
-        /** @var \Spatie\LaravelRayLegacy\Watchers\ExceptionWatcher $exceptionWatcher */
+        /** @var \Spatie\LaravelRay\Watchers\ExceptionWatcher $exceptionWatcher */
         $exceptionWatcher = app(ExceptionWatcher::class);
 
         $exceptionWatcher->enable();
@@ -197,7 +197,7 @@ class Ray extends BaseRay
 
     public function stopShowingExceptions(): self
     {
-        /** @var \Spatie\LaravelRayLegacy\Watchers\ExceptionWatcher $exceptionWatcher */
+        /** @var \Spatie\LaravelRay\Watchers\ExceptionWatcher $exceptionWatcher */
         $exceptionWatcher = app(ExceptionWatcher::class);
 
         $exceptionWatcher->disable();
@@ -208,7 +208,7 @@ class Ray extends BaseRay
     /**
      * @param null $callable
      *
-     * @return \Spatie\LaravelRayLegacy\Ray
+     * @return \Spatie\LaravelRay\Ray
      */
     public function showJobs($callable = null)
     {
@@ -220,7 +220,7 @@ class Ray extends BaseRay
     /**
      * @param null $callable
      *
-     * @return \Spatie\LaravelRayLegacy\Ray
+     * @return \Spatie\LaravelRay\Ray
      */
     public function showCache($callable = null)
     {
@@ -258,7 +258,7 @@ class Ray extends BaseRay
     /**
      * @param null $callable
      *
-     * @return \Spatie\LaravelRayLegacy\Ray
+     * @return \Spatie\LaravelRay\Ray
      */
     public function showViews($callable = null)
     {
@@ -282,7 +282,7 @@ class Ray extends BaseRay
     /**
      * @param null $callable
      *
-     * @return \Spatie\LaravelRayLegacy\Ray
+     * @return \Spatie\LaravelRay\Ray
      */
     public function showQueries($callable = null)
     {
@@ -339,7 +339,7 @@ class Ray extends BaseRay
     /**
      * @param null $callable
      *
-     * @return \Spatie\LaravelRayLegacy\Ray
+     * @return \Spatie\LaravelRay\Ray
      */
     public function showRequests($callable = null)
     {
@@ -363,7 +363,7 @@ class Ray extends BaseRay
     /**
      * @param null $callable
      *
-     * @return \Spatie\LaravelRayLegacy\Ray
+     * @return \Spatie\LaravelRay\Ray
      */
     public function showHttpClientRequests($callable = null)
     {

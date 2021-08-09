@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Polyfills\Support;
+namespace Spatie\LaravelRay\Polyfills\Support;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Pluralizer;
@@ -10,7 +10,7 @@ use Ramsey\Uuid\Codec\TimestampFirstCombCodec;
 use Ramsey\Uuid\Generator\CombGenerator;
 use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\UuidFactory;
-use Spatie\LaravelRayLegacy\Polyfills\Stringable;
+use Spatie\LaravelRay\Polyfills\Stringable;
 use voku\helper\ASCII;
 
 class Str
@@ -49,7 +49,7 @@ class Str
      * Get a new stringable object from the given string.
      *
      * @param  string  $string
-     * @return \Spatie\LaravelRayLegacy\Polyfills\Stringable
+     * @return \Spatie\LaravelRay\Polyfills\Stringable
      */
     public static function of($string)
     {

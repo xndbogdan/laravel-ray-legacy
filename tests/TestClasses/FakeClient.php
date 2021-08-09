@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Tests\TestClasses;
+namespace Spatie\LaravelRay\Tests\TestClasses;
 
 use Illuminate\Support\Str;
 use Spatie\Ray\Client;

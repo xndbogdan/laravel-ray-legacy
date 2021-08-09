@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Watchers;
+namespace Spatie\LaravelRay\Watchers;
 
-use Spatie\LaravelRayLegacy\RayProxy;
+use Spatie\LaravelRay\RayProxy;
 
 abstract class Watcher
 {
     /** @var bool */
     protected $enabled = false;
 
-    /** @var \Spatie\LaravelRayLegacy\RayProxy|null */
+    /** @var \Spatie\LaravelRay\RayProxy|null */
     protected $rayProxy;
 
     abstract public function register(): void;

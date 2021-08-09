@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Tests\TestClasses;
+namespace Spatie\LaravelRay\Tests\TestClasses;
 
 class TestEvent
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Polyfills\Traits;
+namespace Spatie\LaravelRay\Polyfills\Traits;
 
 use Closure;
-use Spatie\LaravelRayLegacy\Polyfills\HigherOrderWhenProxy;
+use Spatie\LaravelRay\Polyfills\HigherOrderWhenProxy;
 
 trait Conditionable
 {

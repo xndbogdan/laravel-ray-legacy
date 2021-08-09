@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\LaravelRayLegacy\Tests;
+namespace Spatie\LaravelRay\Tests;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\LaravelRayLegacy\Ray;
-use Spatie\LaravelRayLegacy\RayServiceProvider;
-use Spatie\LaravelRayLegacy\Tests\Concerns\MatchesOsSafeSnapshots;
-use Spatie\LaravelRayLegacy\Tests\TestClasses\FakeClient;
+use Spatie\LaravelRay\Ray;
+use Spatie\LaravelRay\RayServiceProvider;
+use Spatie\LaravelRay\Tests\Concerns\MatchesOsSafeSnapshots;
+use Spatie\LaravelRay\Tests\TestClasses\FakeClient;
 use Spatie\Ray\Origin\Hostname;
 use Spatie\Ray\Settings\Settings;
 
@@ -17,7 +17,7 @@ class TestCase extends Orchestra
 {
     use MatchesOsSafeSnapshots;
 
-    /** @var \Spatie\LaravelRayLegacy\Tests\TestClasses\FakeClient */
+    /** @var \Spatie\LaravelRay\Tests\TestClasses\FakeClient */
     protected $client;
 
     public function setUp(): void
