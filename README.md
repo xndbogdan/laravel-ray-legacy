@@ -6,6 +6,8 @@ This package can be installed in any PHP application to send messages to [the Ra
 It was modified to work with older laravel installations. 
 It was tested on 5.6 but may work with even lower versions.
 
+``` composer require xndbogdan/laravel-ray-legacy ```
+
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-ray.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-ray)
 
 The desktop app:
